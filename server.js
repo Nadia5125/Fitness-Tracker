@@ -10,8 +10,10 @@ app.use(express.json());
 var routes = require("./controller/fitness_controller");
 app.use(routes);
 
-//TESTING!!
-// var URI = process.env.MONGODB_URI || "mongodb://user: YOUR MONGODB CONNECT WITH HEROKU LINK/NUMBER HERE";
+
+//Mongodb connect with heroku aplication!!  
+var URI = process.env.MONGODB_URI || "YOUR OWN MONGODB URI CONNECTION WITH HEROKU LINK/NUMBER HERE";
+
 
 mongoose.connect(URI, {
     useCreateIndex: true,
