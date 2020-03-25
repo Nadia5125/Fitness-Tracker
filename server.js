@@ -7,7 +7,7 @@ app.use(express.static("public"));
 app.use(express.urlencoded({ extended: true }));
 app.use(express.json());
 
-var routes = require("./controller/fitness_controller");
+var routes = require("./controller/fitnessController");
 app.use(routes);
 
 
