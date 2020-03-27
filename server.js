@@ -12,7 +12,8 @@ app.use(routes);
 
 
 //Mongodb connect with heroku aplication!!  
-// var URI = process.env.MONGODB_URI || "YOUR OWN MONGODB URI CONNECTION WITH HEROKU LINK/NUMBER HERE";
+var URI = process.env.MONGODB_URI || "YOUR OWN MONGODB URI CONNECTION WITH HEROKU LINK/NUMBER HERE";
+
 
 mongoose.connect(URI, {
     useCreateIndex: true,
